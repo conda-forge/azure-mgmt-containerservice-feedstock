@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-containerservice" %}
-{% set version = "9.0.1" %}
+{% set version = "9.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 7e4459679bdba4aa67a4b5848e63d94e965a304a7418ef7607eb7a9ce295d886
-  
+  sha256: e7904b60c42a153b64b1604f3c698602686b38787bebdaed6e808cd43b6e5967
+
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Microsoft Azure Container Service Management Client Library for Python.'
+  summary: Microsoft Azure Container Service Management Client Library for Python.
 
 
 extra:
