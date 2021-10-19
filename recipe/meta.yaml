@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-containerservice" %}
-{% set version = "10.1.0" %}
+{% set version = "16.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: 98f5171b519eb18cb54cc1bdf2bb23d4c377e04e062447721a550f5904319ef0
+  sha256: ee40fa76d84b82e37e1d8a364649de25bb1e0c6c07f182f145a3ade44ec43711
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - msrest >=0.5.0
     - msrestazure >=0.4.32,<2.0.0
     - azure-common >=1.1,<2.0
+    - azure-mgmt-core
 
 test:
   imports:
