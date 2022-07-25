@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-containerservice" %}
-{% set version = "19.1.0" %}
+{% set version = "20.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: b74e827acc6f8e4df5683c645f6623d15cc5b9b59b880736e8bccd4c881512ab
+  sha256: f973496c8e0b4f1c7c91c36be9d0e571a1ae8ebaab88a6843dbd1d7a8e986e43
 
 build:
   noarch: python
