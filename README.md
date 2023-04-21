@@ -1,11 +1,11 @@
-About azure-mgmt-containerservice
-=================================
+About azure-mgmt-containerservice-feedstock
+===========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-containerservice-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Azure/azure-sdk-for-python
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-mgmt-containerservice-feedstock/blob/main/LICENSE.txt)
 
 Summary: Microsoft Azure Container Service Management Client Library for Python.
 
