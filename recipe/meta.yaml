@@ -1,5 +1,5 @@
 {% set name = "azure-mgmt-containerservice" %}
-{% set version = "32.0.0" %}
+{% set version = "34.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ccb587479d8a93ec78f7162590adc82e4fba4de76e4adc3419f33ad225efb292
+  sha256: 822d07828b746a5ea5408a8b3770f41dc424d6c4c28de53c29611b62bef8aea3
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools
   run:
+    - typing_extensions >=4.6.0
     - typing-extensions >=4.6.0
     - python >={{ python_min }}
     - azure-common >=1.1
